@@ -1,0 +1,26 @@
+{   
+    "images": [
+        {
+            "name": "batch 10 face 123.jpg",
+            "height": 1024,
+            "width": 512,
+            "uid": "6fd4364a-52b0-49cc-bba9-cc0270a33533"
+        }
+    ],
+    "annotations": [
+        {
+            "num": 0,
+            "box": [0.2, 0.3, 0.4, 0.25],
+            "mask": "Incorrect",
+            "face": "Khanh Phuong",
+            "img_uid": "6fd4364a-52b0-49cc-bba9-cc0270a33533"
+        },
+        {
+            "num": 1,
+            "box": [0.2, 0.8, 0.43, 0.25], 
+            "mask": "Incorrect",
+            "face": "Khanh Phuong",
+            "img_uid": "6fd4364a-52b0-49cc-bba9-cc0270a33533"
+        }
+    ]
+}
