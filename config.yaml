@@ -1,0 +1,11 @@
+device: 'cpu'
+
+arcface:
+  weight_path: E:/projects/data/weights/resnet18_110.pth
+
+  img_size: [128, 128]
+  use_se: False
+  embedding_path: ''
+
+  threshold: 0.4
+

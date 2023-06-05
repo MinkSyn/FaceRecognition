@@ -1,8 +1,11 @@
+import cv2
+import hydra
 import torch
 
 from yolov7.experimental import attempt_load
 from yolov7.utils.general import check_img_size
 
+from arcface.inference import ArcFaceInference
 
 class Inference:
     def __init__(self, img_size, device, weight_path):
@@ -30,8 +33,16 @@ class Inference:
         return input
 
 
-def main():
-    pass
+@hydra.main(config_name='config', config_path='E:/projects/src', version_base=None)
+def main(cfg):
+    img_path = 'E:/projects/data/images/Ai Phuong/AI_PHUONG.jpg'
+    img_np = cv2.imread(img_path)
+    
+    detect = None
+    identify = ArcFaceInference(device=cfg.device, cfg=cfg.arcface)
+    
+    result = identify.predict(img_path)
+    print(result.shape)
 
 
 if __name__ == '__main__':
