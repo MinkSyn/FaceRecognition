@@ -1,11 +1,11 @@
 device: 'cpu'
-
+yolov7:
+  arch: ''
 arcface:
   weight_path: E:/projects/data/weights/resnet18_110.pth
-
+  embdeding_path: ''
   img_size: [128, 128]
   use_se: False
-  embedding_path: ''
-
   threshold: 0.4
-
+  coresets_path: ''
+root_test: ''

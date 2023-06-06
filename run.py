@@ -5,6 +5,7 @@ import torch
 from yolov7.experimental import attempt_load
 from yolov7.utils.general import check_img_size
 
+from const import CONFIG_NAME, CONFIG_PATH
 from arcface.inference import ArcFaceInference
 
 class Inference:
@@ -33,7 +34,7 @@ class Inference:
         return input
 
 
-@hydra.main(config_name='config', config_path='E:/projects/src', version_base=None)
+@hydra.main(config_name=CONFIG_NAME, config_path=CONFIG_PATH, version_base=None)
 def main(cfg):
     img_path = 'E:/projects/data/images/Ai Phuong/AI_PHUONG.jpg'
     img_np = cv2.imread(img_path)
