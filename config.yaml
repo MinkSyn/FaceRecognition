@@ -1,11 +1,13 @@
-device: 'cpu'
+device: cpu
 yolov7:
-  arch: ''
+  arch: yolov7s
 arcface:
-  weight_path: E:/projects/data/weights/resnet18_110.pth
-  embdeding_path: ''
+  weight_path: 
   img_size: [128, 128]
   use_se: False
   threshold: 0.4
-  coresets_path: ''
-root_test: ''
+  coresets_path: 
+coresets:
+  root: 
+  out_path: 
+root_test: 
